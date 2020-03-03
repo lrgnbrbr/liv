@@ -1,9 +1,18 @@
 .navbar {
-  padding: 1em;
+  padding: 0;
   background-color: #F7F5F5;
 
 }
 
 .nav {
   flex-wrap: initial;
+}
+
+
+.menu-collapse{
+  top: 0;
+  position: fixed;
+  background: #A29EFF;
+  width: 100%;
+  height: 100%;
 }
