@@ -1,0 +1,42 @@
+
+
+body {
+  background: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper .thumb {
+  position: absolute;
+  width: 40vw;
+  height: 400px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transform-origin: center;
+  transition: width 285ms cubic-bezier(0.4, 0.0, 0.2, 1) 50ms, height 325ms cubic-bezier(0.4, 0.0, 0.2, 1);
+
+}
+.thumb.move {
+  width: 100vw;
+  height: 700px;
+  transition: width 285ms cubic-bezier(0.4, 0.0, 0.2, 1), height 325ms cubic-bezier(0.4, 0.0, 0.2, 1) 50ms;
+}
+
+.thumb{
+  background-color:#E0D7F6 !important;
+}
+
+.image_card{
+  display: flex !important;
+  max-height: 50% ;
+}
+
+.image_card img {
+  max-width: 100px;
+  max-height: 100px;
+  justify-content: center;
+}
