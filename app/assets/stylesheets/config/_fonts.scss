@@ -5,6 +5,8 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 
+
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
@@ -14,3 +16,11 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+.title {
+  font-family: 'Bebas Neue', cursive;
+  color: #706AFD;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 20px;
+}
