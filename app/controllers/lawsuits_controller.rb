@@ -1,8 +1,12 @@
 class LawsuitsController < ApplicationController
-  before_action :authenticate_user!
+  skip_before_action :authenticate_user!
+
+  def index
+    @lawsuit = Lawsuit.all
+  end
 
   def new
-  @lawsuit = Lawsuit.new
+    @lawsuit = Lawsuit.new
   end
 
   def create
