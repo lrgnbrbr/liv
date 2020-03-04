@@ -8,8 +8,8 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '6.0.2.1'
 gem 'redis'
+gem 'video_thumb' #pour vignette youtube
 gem 'choice.js'
-
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
