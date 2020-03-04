@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-    <body>
-       <div class="container-home">
+    <body style="background: white">
+       <div class="container-home" style="margin-bottom: 8em">
     <%= yield %>
     <%= javascript_pack_tag 'application' %>
      <%= render 'shared/navbar_sticky_mobile' %>
