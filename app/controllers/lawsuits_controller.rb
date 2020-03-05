@@ -10,8 +10,12 @@ class LawsuitsController < ApplicationController
   end
 
   def create
-    Lawsuit.create!(lawsuit_params)
-    redirect_to lawsuit_path
+    @lawsuit = Lawsuit.create!(lawsuit_params.merge(violence_type:params[:lawsuit][:violence_type]))
+    redirect_to lawsuit_path @lawsuit
+  end
+
+  def show
+    @lawsuit=Lawsuit.find(params[:id])
   end
 
   private
