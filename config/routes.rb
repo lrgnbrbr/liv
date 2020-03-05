@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'informations/index'
   get 'testimonials/index'
-  get 'organizations/index'
+  # get 'organizations/index'
   devise_for :users
   root to: 'pages#home'
 

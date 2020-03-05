@@ -23,7 +23,7 @@ class OrganizationsController < ApplicationController
   end
 
   def index
-    @organization = Organization.all
+    @organizations = Organization.all
   end
 
   def destroy

@@ -1,1 +1,14 @@
-<p>Hello there</p>
+<h1>Hello World</h1>
+
+
+<%#= select_tag "organization", options_from_collection_for_select(@organizations, "id", "zip_code"),
+class: 'select2'
+%>
+
+<input type="text" placeholder="Votre code postal" id="filter-ogranizations">
+
+<% @organizations.each do |organization| %>
+  <div class="organization" data-zip="<%= organization.zip_code %>">
+    <%= organization.name %> - <%= organization.zip_code %>
+  </div>
+<% end %>
