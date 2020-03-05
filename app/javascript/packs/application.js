@@ -3,6 +3,8 @@ require("@rails/activestorage").start()
 require("channels")
 
 import "bootstrap";
+
+import "components/index.js";
 import "components/testimonials.js";
 
 
@@ -17,3 +19,4 @@ import "components/testimonials.js";
 
 // document.querySelector('#toto');
 //  add id list?;
+
