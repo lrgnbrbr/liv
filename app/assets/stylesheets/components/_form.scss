@@ -1,8 +1,10 @@
-.btn_liv{
+.btn.btn_liv{
   background: #A29EFF;
   font-family: 'Nunito', sans-serif;
   color: white;
   font-size: 20px;
+  width: 342px;
+  height: 57px;
 }
 
 .btn_liv:hover{
@@ -35,4 +37,5 @@
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 
