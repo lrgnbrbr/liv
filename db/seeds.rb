@@ -18,7 +18,7 @@ CSV.foreach(file_path, headers: :first_row) do |row|
   organization.phon_number = row["Phone_number"]
   organization.address = row["Address"]
   organization.zip_code = row["Zip_code"]
-  organization.city = row["City"]
+  organization.city = row["City"].upcase.strip
   organization.description = row["Description"]
   # ...
 
