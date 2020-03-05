@@ -1,4 +1,5 @@
-class OrganizationController < ApplicationController
+class OrganizationsController < ApplicationController
+    skip_before_action :authenticate_user!
 
   def new
     @organization = Organization.new
@@ -22,6 +23,7 @@ class OrganizationController < ApplicationController
   end
 
   def index
+    @organization = Organization.all
   end
 
   def destroy
