@@ -17,7 +17,7 @@
 
 <p> <strong> Auteur(e) des faits: </strong><%= @lawsuit.author_violence%></p>
 
-<p> <strong> Objet: </strong><%= @lawsuit.violence_type.join %></p>
+<p> <strong> Objet: </strong><%= @lawsuit.violence_type.reject(&:empty?).join %></p>
 
 <p> <strong> Date: </strong><%= @lawsuit.violence_date %> </p>
 
