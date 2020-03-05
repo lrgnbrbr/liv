@@ -23,3 +23,28 @@
   height: 80px;
 }
 
+.btn.btn_liv{
+  background: #A29EFF;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn.btn_liv:hover{
+  background: #E0D7F6;
+  font-family: 'Nunito', sans-serif;
+  color: #A29EFF;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}

@@ -5,8 +5,9 @@
 }
 
 .nav {
-  flex-wrap: initial;
+  flex-wrap: initial !important;
 }
+
 
 
 .menu-collapse {
@@ -22,6 +23,7 @@
   font-size: 35px;
   text-align: center;
   color: white;
+  z-index: 3;
 }
 
 .menu-collapse li {
@@ -55,7 +57,7 @@
 }
 
 a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 

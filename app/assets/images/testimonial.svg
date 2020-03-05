@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162.889" height="160.022" viewBox="0 0 162.889 160.022">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a29eff"/>
+      <stop offset="1" stop-color="#e0d7f6"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_24" data-name="Groupe 24" transform="translate(-125.857 -117.314)">
+    <path id="Tracé_3" data-name="Tracé 3" d="M119.2,36.066C112.964,15.655,99.684,4.519,85.778,1.15,69.168-2.876,49.264,3.691,44.207,20.5S32.24,57,12.591,55.589.235,78.036,8.09,89.156s29.675,30.782,66.423,20.734C104.249,101.757,129.892,71.043,119.2,36.066Z" transform="matrix(0.848, 0.53, -0.53, 0.848, 185.56, 117.314)" opacity="0.75" fill="url(#linear-gradient)"/>
+    <path id="Tracé_14" data-name="Tracé 14" d="M47.332,78.8c0-3.007.012-5.717-.007-8.426a20.7,20.7,0,0,0-.178-2.107c-.082-.744-.523-.932-1.2-.729A33.63,33.63,0,0,1,34.94,68.768C22.961,68.287,13.3,63.294,6.22,53.616A31.4,31.4,0,0,1,.374,29.834C1.961,19.006,7.787,10.81,17.14,5.222A35.54,35.54,0,0,1,40.86.376C54.122,2.233,63.89,9.035,69.554,21.282a31,31,0,0,1,2.509,17.274,37.372,37.372,0,0,1-5.776,15.082A169.286,169.286,0,0,1,48.326,77.863C48.064,78.156,47.754,78.406,47.332,78.8Z" transform="translate(171 158.995)" fill="#2d2043"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="7" height="28" rx="3.5" transform="translate(221 185) rotate(90)" fill="#b9b6ff"/>
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="7" height="28" rx="3.5" transform="translate(221 197) rotate(90)" fill="#b9b6ff"/>
+  </g>
+</svg>

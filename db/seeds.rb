@@ -7,6 +7,8 @@ require "csv"
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+user1 = User.create!(pseudo: 'Toto', password: 'toto')
+
 puts "je supprime #{Organization.count} associations"
 Organization.destroy_all
 
@@ -18,7 +20,7 @@ CSV.foreach(file_path, headers: :first_row) do |row|
   organization.phon_number = row["Phone_number"]
   organization.address = row["Address"]
   organization.zip_code = row["Zip_code"]
-  organization.city = row["City"]
+  organization.city = row["City"].upcase.strip
   organization.description = row["Description"]
   # ...
 

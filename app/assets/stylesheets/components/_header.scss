@@ -4,4 +4,10 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
+}
+
+.icone-page {
+  display: flex;
+  justify-content: center;
 }
