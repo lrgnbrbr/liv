@@ -1,52 +1,40 @@
 <input type="checkbox" id="toto1">
 <div class="menu-collapse">
   <ul>
-    <li> <a href="#">ACCUEIL<a></li>
-      <li><a href="#">ANNUAIRE<a></li>
-      <li><a href="#">INFORMATIONS<a></li>
-      <li><a href="#">TÉMOIGNAGES<a></li>
-      <li><a href="#">FORMULAIRE<a></li>
-      <li><a href="#">MÉDICAL<a></li>
-    </ul>
-  </div>
+    <li><%= link_to "ACCUEIL", root_path %></li>
+    <li><a href="#">ANNUAIRE<a></li>
+     <li><%= link_to "INFORMATIONS", informations_index_path %></li>
+     <li><%= link_to "TÉMOIGNAGES", testimonials_index_path %></li>
+     <li><%= link_to "FORMULAIRE",  new_lawsuit_path %></li>
+     <li><%= link_to "MÉDICAL",  medical_index_path %></li>
+   </ul>
+ </div>
 
-  <nav class="navbar fixed-bottom" style="justify-content:center !important">
-    <ul class="nav">
-      <li class="nav-item">
-        <button type="button" class="btn btn-light" ><a href="#"><%= image_tag 'accueil.svg' %></a></button>
-      </li>
+ <nav class="navbar fixed-bottom" style="justify-content:center !important">
+  <ul class="nav">
 
-      <li class="nav-item">
-       <button type="button" class="btn btn-light"><a href="#"><%= image_tag 'annuaire.svg' %></a></button>
-     </li>
-
-     <li class="nav-item">
-       <button type="button" class="btn btn-light-urgence"><a href="#"><%= image_tag '3639.svg' %></a></button>
-     </li>
-
-     <li class="nav-item">
-      <button type="button" class="btn btn-light"><a href="#"><%= image_tag 'chat_police.svg' %></a></button>
+    <li class="nav-item">
+      <button type="button" class="btn btn-light" ><%= link_to root_path %><%= image_tag 'accueil.svg' %></a></button>
     </li>
 
     <li class="nav-item">
-      <label for="toto1" id="button-hamburger" class="btn btn-light"></label>
-    </li>
-  </ul>
+     <button type="button" class="btn btn-light"><a href="#"><%= image_tag 'annuaire.svg' %></a></button>
+   </li>
+
+   <li class="nav-item">
+     <button type="button" class="btn btn-light-urgence"><a href="tel:+33623082192"><%= image_tag '3639.svg' %></a></button>
+   </li>
+
+   <li class="nav-item">
+    <button type="button" class="btn btn-light"><a href="https://www.service-public.fr/particuliers/vosdroits/R48395" target="_blank"><%= image_tag 'chat_police.svg' %></a></button>
+  </li>
+
+  <li class="nav-item">
+    <label for="toto1" id="button-hamburger" class="btn btn-light"></label>
+  </li>
+
+</ul>
 </nav>
-
-
-<!-- #au clic sur button-hamburger, display = toggle une class open js
-traslate + transition css
-pseud elmnt "X" changer image  -->
-
-
-
-
-
-
-
-
-
 
 
 
