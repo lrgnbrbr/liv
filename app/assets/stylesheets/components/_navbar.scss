@@ -32,11 +32,11 @@
   padding-top: 50%;
 }
 
-#toto {
+#toto1 {
   display: none;
 }
 
-#toto:checked + .menu-collapse {
+#toto1:checked + .menu-collapse {
   top: 0;
 }
 
@@ -48,15 +48,14 @@
 }
 
 
-#toto:checked ~ a > .navbar > ul > li > #button-hamburger  {
-  transition: top ease 0.3s;
+#toto1:checked ~ .navbar > ul > li > #button-hamburger {
   background-image: image-url('menu-close.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
