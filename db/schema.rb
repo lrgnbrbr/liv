@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2020_03_05_144106) do
   end
 
   create_table "organizations", force: :cascade do |t|
-    t.integer "zip_code"
+    t.string "zip_code"
     t.string "name"
     t.string "address"
     t.string "phon_number"
