@@ -20,16 +20,18 @@ $('.prev').on('click', function(){
     showCurrent();
 });
 
+
+// #Correspond au feature de swipe sur mobile
 // if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-if('ontouchstart' in window){
-  $('.diy-slideshow').swipe({
-    swipeLeft:function() {
-      counter++;
-      showCurrent();
-    },
-    swipeRight:function() {
-      counter--;
-      showCurrent();
-    }
-  });
-}
+// if('ontouchstart' in window){
+//   $('.diy-slideshow').swipe({
+//     swipeLeft:function() {
+//       counter++;
+//       showCurrent();
+//     },
+//     swipeRight:function() {
+//       counter--;
+//       showCurrent();
+//     }
+//   });
+// }
