@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PDF</title>
+    <%= wicked_pdf_stylesheet_link_tag "_pdf" -%>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+<body>
+  <div class='container'>
+    <%= yield %>
+  </div>
+</body>
+</html>

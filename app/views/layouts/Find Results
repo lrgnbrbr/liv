@@ -1,0 +1,10 @@
+Searching 191 files for "applications"
+
+/Users/aj/code/lrgnbrbr/liv/test/application_system_test_case.rb:
+    1  require "test_helper"
+    2
+    3: class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
+    4    driven_by :selenium, using: :chrome, screen_size: [1400, 1400]
+    5  end
+
+1 match in 1 file
