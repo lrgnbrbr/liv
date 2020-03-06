@@ -1,1 +1,22 @@
-<p>Hello there</p>
+
+<div class="container">
+
+  <div class="search-bar">
+  <input type="text" placeholder="Votre code postal" id="filter-ogranizations">
+  </div>
+
+    <div class="results-orga">
+    <% @organizations.each do |organization| %>
+        <div class="organization" data-zip="<%= organization.zip_code %>">
+         <h1><%= organization.name %></h1><h2><%= organization.zip_code %></h2>
+          <p><%= organization.description %></p><br>
+          <%= link_to "tel:#{organization.phon_number}", class:"phonelink" do %>
+          <i class="fas fa-phone"></i>
+          <% end %>
+          <br>
+          <br>
+        </div>
+    <% end %>
+  </div>
+
+</div>
