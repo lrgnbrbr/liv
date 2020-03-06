@@ -25,8 +25,10 @@
 
 <p> <strong>  </strong><%= @lawsuit.declaration%></p>
 
-  <%= link_to 'Create PDF document', lawsuit_path(@lawsuit, :format => :pdf) %>
+<span id='pdf_style'>
 
+  <%= link_to 'Create a pdf document', lawsuit_path(@lawsuit, :format => :pdf) %>
+</span>
 
 </div>
 
