@@ -14,6 +14,7 @@ figure{
   position: absolute;
   opacity: 0;
   transition: 1s opacity;
+  // position: static;
 }
 figcaption{
   position: absolute;
@@ -66,3 +67,10 @@ figure.show{
   color: #fff;
 }
 a{color:#fff;}
+
+.btn-primary{
+  color: #fff;
+  background-color: #A29EFF !important;
+  border-color: #A29EFF !important;
+  border-radius: 5px;
+}
