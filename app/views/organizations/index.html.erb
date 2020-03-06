@@ -1,20 +1,22 @@
-<h1>Hello World</h1>
 
+<div class="container">
 
-<%#= select_tag "organization", options_from_collection_for_select(@organizations, "id", "zip_code"),
-class: 'select2'
-%>
+  <div class="search-bar">
+  <input type="text" placeholder="Votre code postal" id="filter-ogranizations">
+  </div>
 
-<input type="text" placeholder="Votre code postal" id="filter-ogranizations">
+    <div class="results-orga">
+    <% @organizations.each do |organization| %>
+        <div class="organization" data-zip="<%= organization.zip_code %>">
+         <h1><%= organization.name %></h1><h2><%= organization.zip_code %></h2>
+          <p><%= organization.description %></p><br>
+          <%= link_to "tel:#{organization.phon_number}", class:"phonelink" do %>
+          <i class="fas fa-phone"></i>
+          <% end %>
+          <br>
+          <br>
+        </div>
+    <% end %>
+  </div>
 
-<% @organizations.each do |organization| %>
-    <div class="organization" data-zip="<%= organization.zip_code %>">
-      <%= organization.name %> - <%= organization.zip_code %> <br>
-      <%= organization.description %> <br>
-      <%= link_to "tel:#{organization.phon_number}", class:"phonelink" do %>
-        <i class="fas fa-phone"></i>
-      <% end %>
-
-      <br>
-    </div>
-<% end %>
+</div>
