@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   resources :lawsuits, only: [ :new, :create, :show]
   resources :organizations
   resources :medical
+
+
+
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
