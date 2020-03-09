@@ -9,7 +9,8 @@ gem 'puma'
 gem 'rails', '6.0.2.1'
 gem 'redis'
 gem 'video_thumb' #pour vignette youtube
-
+gem 'wicked_pdf', '~> 1.1'
+gem 'wkhtmltopdf-binary'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sassc-rails'
