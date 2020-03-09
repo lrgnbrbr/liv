@@ -1,0 +1,37 @@
+.search-bar{
+margin-bottom: 10%;
+display: flex;
+justify-content: center;
+}
+
+
+.results-orga{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#filter-ogranizations{
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #E0D7F6;
+  color:  #A29EFF;
+  font-size: 25px;
+  text-align:center;
+
+}
+
+.organization h1{
+  font-size: 24px;
+  color: #A29EFF;
+}
+
+.organization h2{
+  font-size: 16px;
+  color: #A29EFF;
+}
+
+
+.organization p{
+  color: #8c8c8c;
+  margin-bottom: 0px;
+}
