@@ -1,5 +1,5 @@
 class LawsuitsController < ApplicationController
-  before_action :authenticate_user!
+   skip_before_action :authenticate_user!
 
   def index
     @lawsuit = Lawsuit.all
@@ -24,8 +24,18 @@ class LawsuitsController < ApplicationController
           template: "lawsuits/show.html.erb",
           layout: 'pdf.html'
         )
-     end
-   end
+      end
+    end
+  end
+
+ def lawsuit_send
+  @lawsuit = Lawsuit.find(params[:id])
+  #envoyer le mail
+  LawsuitMailer.lawsuit_send(@lawsuit.id).deliver_now
+
+  #rediriger vers la home
+
+  redirect_to root_path
  end
 
   private

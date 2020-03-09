@@ -5,9 +5,13 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
-  resources :lawsuits, only: [ :new, :create, :show]
+  resources :lawsuits, only: [ :new, :create, :show] do
+    get "lawsuit_send", on: :member
+  end
   resources :organizations
   resources :medical
+
+
 
 
 

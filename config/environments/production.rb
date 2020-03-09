@@ -1,6 +1,16 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "https://liv-today.herokuapp.com/" }
   # Settings specified here will take precedence over those in config/application.rb.
+  ActionMailer::Base.smtp_settings = {
+  :user_name => 'LauraLiv',
+  :password => '1234Liv5#',
+  :domain => 'https://liv-today.herokuapp.com/',
+  :address => 'smtp.sendgrid.net',
+  :port => 465,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
 
   # Code is not reloaded between requests.
   config.cache_classes = true
