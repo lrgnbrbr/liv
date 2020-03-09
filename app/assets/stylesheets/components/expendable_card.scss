@@ -71,3 +71,13 @@
   align-items: center;
 }
 
+@media screen and (min-width: 992px) {
+  .diy-slideshow {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 600px;
+    width: 500px;
+  }
+}
+
