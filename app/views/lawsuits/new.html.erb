@@ -10,7 +10,7 @@
          <%= f.input :first_name, placeholder: '', label: 'Ton nom' %>
          <%= f.input :last_name, placeholder: '', label: 'Ton prénom' %>
          <%= f.input :zip_code, placeholder:'', label: 'Code postal (pour choisir le commissariat)'%>
-         <%= f.input :number_dni, placeholder: '', label: 'N° DNI (carte identité, passport, visa étranger)' %>
+         <%= f.input :number_dni, placeholder: '', label: 'N° CNI (carte identité, passport, visa étranger)' %>
          <p>Type de violence dont tu as été victime ? </p>
          <div class="checkbox-container"><%= f.input :violence_type, label: '', placeholder: '', collection: ['Viols', 'Violence psychologique', 'Violence physique', 'Je ne sais pas'], input_html: { class: 'choices' }, as: :check_boxes, include_blank: false %></div>
          <%= f.input :violence_date, placeholder: '', label: 'Date et heure de l’agression que tu as subis:' %>
