@@ -21,11 +21,13 @@
     </div>
 
 
-    <div class="mx-auto" style="display: flex; justify-content: center; height: 600px; text-align: center;">
-      <div class="row" id="annuaire">
+    <div class="mx-auto" style="display: flex; justify-content: center; height: 1000px; text-align: center;">
+      <div class="row annuaire-web" id="annuaire">
         <div class=col>
-          <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color:#706AFD ; text-align: center"> ANNUAIRE </h2>
-          <p>ajouter l'annuaire</p>
+          <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color:#706AFD ; text-align: center; margin-bottom: 20px !important;"> ANNUAIRE </h2>
+          <div style="margin-top: 0">
+            <%= render('shared/organization-items', id: "filter-organizations-web", organizations: @organizations) %>
+          </div>
         </div>
       </div>
     </div>
@@ -34,7 +36,7 @@
       <div class="row" id="temoignages">
         <div class="col">
           <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color:#706AFD ; text-align: center"> TÉMOIGNAGES </h2>
-          <p>ajouter les témoignages</p>
+        <p> Créer une gallerie vidéo Masony spéciale pour le web</p>
         </div>
       </div>
     </div>
