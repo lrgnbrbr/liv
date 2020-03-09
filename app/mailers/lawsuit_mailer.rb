@@ -8,6 +8,7 @@ class LawsuitMailer < ApplicationMailer
   # end
 
 
+
   def lawsuit_send(lawsuit_id)
     @lawsuit = Lawsuit.find(lawsuit_id)
     attachments['attachment.pdf'] = WickedPdf.new.pdf_from_string(
@@ -17,10 +18,12 @@ class LawsuitMailer < ApplicationMailer
  #mails(to: @user.email)
   end
 
+
 # def lawsuit_send
 #   attachments['attachment.pdf'] = WickedPdf.new.pdf_from_string(
 #   render_to_string('link_to_view.pdf.erb', layout: 'pdf')
 # )
 # end
+
 
 end

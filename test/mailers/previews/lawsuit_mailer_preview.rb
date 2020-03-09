@@ -7,9 +7,8 @@ class LawsuitMailerPreview < ActionMailer::Preview
   # end
 
   # Preview this email at http://localhost:3000/rails/mailers/lawsuit_mailer/send
-  def send
-    LawsuitMailer.send
-       mail(to: 'liv.asso.364@gmail.com', subject: 'Envoi du fichier pdf')
+  def lawsuit_send
+    LawsuitMailer.lawsuit_send
   end
 
 end
