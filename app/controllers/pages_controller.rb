@@ -6,4 +6,9 @@ class PagesController < ApplicationController
 
   def medical
   end
+
+  def calculator
+    render layout: "calculator"
+  end
+
 end
