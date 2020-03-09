@@ -1,63 +1,75 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.calculator{
+  html {
+    box-sizing: border-box;
+  }
 }
 
 .calculator{
-   body {
-    margin: 0;
-    overflow: hidden !important;
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
 }
-/* Responsive Images */
 
-embed,
-iframe,
-img,
-object,
-video {
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-p,
-pre,
-blockquote,
-figure,
-hr {
+.calculator{
+ body {
   margin: 0;
-  padding-right: 0;
-  padding-left: 0;
+  overflow: hidden !important;
+}
+}
+/* Responsive Images */
+.calculator {
+  embed,
+  iframe,
+  img,
+  object,
+  video {
+    max-width: 100%;
+  }
 }
 
-a {
-  text-decoration: none;
+.calculator {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  p,
+  pre,
+  blockquote,
+  figure,
+  hr {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
-a:focus {
-  outline: none;
+.calculator {
+  a {
+    text-decoration: none;
+  }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: block;
+.calculator {
+  a:focus {
+    outline: none;
+  }
+}
+.calculator {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: block;
+  }
 }
 
 /* Removes all decimals and discs from lists */
@@ -75,36 +87,39 @@ ul {
  * checkboxes and radios)
  */
 
-input,
-textarea,
-button {
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  outline: none;
-  appearance: none;
-  text-align: left;
+ .calculator {
+  input,
+  textarea,
+  button {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    outline: none;
+    appearance: none;
+    text-align: left;
+  }
+}
+.calculator {
+  input:hover,
+  input:active,
+  input:focus,
+  textarea:hover,
+  textarea:active,
+  textarea:focus,
+  button:hover,
+  button:active,
+  button:focus {
+    outline: none;
+  }
 }
 
-input:hover,
-input:active,
-input:focus,
-textarea:hover,
-textarea:active,
-textarea:focus,
-button:hover,
-button:active,
-button:focus {
-  outline: none;
-}
 
-
-:root {
-  font-family: Helvetica, Arial, sans-serif;
-}
+// :root {
+//   font-family: Helvetica, Arial, sans-serif;
+// }
 
 
 // body {
@@ -116,12 +131,16 @@ button:focus {
 //   line-height: 2.8 !important;
 // }
 
-.container {
-  max-width: 100vw;
+.calculator {
+  .container {
+    max-width: 100vw;
+  }
 }
 
-.container > p {
-  text-align: center;
+.calculator {
+  .container > p {
+    text-align: center;
+  }
 }
 
 .calculator {
