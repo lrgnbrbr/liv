@@ -14,11 +14,51 @@
 
 @import "components/*";
 
+@media screen and (min-width: 992px) {
+  .hidden-computer {
+    display: none;
 
+  }
 
+  .results-orga {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: left;
+    flex-flow: wrap;
+    margin: 10px;
+    height: 700px;
+    overflow-x: scroll;
+    grid-column-gap: 16px;
 
+  }
+
+  .organization {
+    width: 38vw;
+
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .phonelink {
+    font-size: 20px;
+  }
+}
+
+#annuaire .container{
+  margin-top: 0;
+}
 
 #toto {
   height: 0;
   width: 0;
 }
+
+@media screen and (max-width: 600px) {
+  .hidden-mob {
+    display: none;
+  }
+}
+

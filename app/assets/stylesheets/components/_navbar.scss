@@ -9,7 +9,6 @@
 }
 
 
-
 .menu-collapse {
   top: 100%;
   position: fixed;
@@ -24,6 +23,15 @@
   text-align: center;
   color: white;
   z-index: 3;
+  a {
+    color: white !important;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #706AFD;
+    text-decoration: none;
+  }
 }
 
 .menu-collapse li {
@@ -56,12 +64,24 @@
   background-repeat: no-repeat;
 }
 
-a {
-  color: white !important;
-  text-decoration: none;
+
+
+.menu-web {
+  color: #A29EFF;
+  font-style: none;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-a:hover {
-  color: #706AFD;
-  text-decoration: none;
+
+.menu-web:hover {
+  color: white;
+  font-style: none;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+

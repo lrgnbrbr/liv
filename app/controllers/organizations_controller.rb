@@ -6,7 +6,7 @@ class OrganizationsController < ApplicationController
   end
 
   def create
-    Organization.create!(organziation_params)
+    Organization.create!(orgaization_params)
     redirect_to organization_path
   end
 
@@ -35,7 +35,7 @@ class OrganizationsController < ApplicationController
  private
 
 
-  def organziation_params
+  def organization_params
     params.require(:organization).permit(:zip_code, :address, :name, :phon_number, :description, :email, :city)
   end
 end

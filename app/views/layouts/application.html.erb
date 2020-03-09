@@ -13,7 +13,8 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
     <body style="background: white">
-      <div class="container-home" style="margin-bottom: 8em">
+
+      <div class="container-home hidden-computer" style="margin-bottom: 8em">
         <%= yield %>
         <%= javascript_pack_tag 'application' %>
         <%= render 'shared/navbar_sticky_mobile' %>

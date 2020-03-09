@@ -2,7 +2,7 @@
 <div class="menu-collapse">
   <ul>
     <li><%= link_to "ACCUEIL", root_path %></li>
-    <li><a href="#">ANNUAIRE<a></li>
+    <li><%= link_to "ANNUAIRE",  organizations_path %></li>
      <li><%= link_to "INFORMATIONS", informations_index_path %></li>
      <li><%= link_to "TÉMOIGNAGES", testimonials_index_path %></li>
      <li><%= link_to "FORMULAIRE",  new_lawsuit_path %></li>
@@ -10,19 +10,20 @@
    </ul>
  </div>
 
- <nav class="navbar fixed-bottom" style="justify-content:center !important">
+<div class="hidden-computer">
+ <nav class="navbar fixed-bottom" style="justify-content:center !important;">
   <ul class="nav">
 
     <li class="nav-item">
-      <button type="button" class="btn btn-light" ><%= link_to root_path %><%= image_tag 'accueil.svg' %></a></button>
+      <button type="button" class="btn btn-light" ><a href="/"><%= image_tag 'accueil.svg' %></button>
     </li>
 
     <li class="nav-item">
-     <button type="button" class="btn btn-light"><a href="#"><%= image_tag 'annuaire.svg' %></a></button>
+     <button type="button" class="btn btn-light"><a href="/organizations"><%= image_tag 'annuaire.svg' %></a></button>
    </li>
 
    <li class="nav-item">
-     <button type="button" class="btn btn-light-urgence"><a href="tel:+33623082192"><%= image_tag '3639.svg' %></a></button>
+     <button type="button" class="btn btn-light-urgence"><a href="tel:+33623082192"><%= image_tag 'urgence.png' %></a></button>
    </li>
 
    <li class="nav-item">
@@ -35,6 +36,4 @@
 
 </ul>
 </nav>
-
-
-
+</div>

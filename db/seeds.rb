@@ -7,7 +7,6 @@ require "csv"
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user1 = User.create!(pseudo: 'Toto', password: 'toto')
 
 puts "je supprime #{Organization.count} associations"
 Organization.destroy_all
@@ -29,4 +28,6 @@ end
 
 puts "Bravo : on a créé #{Organization.count} associations"
 
-
+Pseudo.create(:login => 'Sarah',
+            :password => '12345678'
+            :password_confirmation => '12345678')
