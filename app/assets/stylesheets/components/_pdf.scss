@@ -5,6 +5,16 @@
   background-position: 200px 280px;
 }
 
+.nobreak:before {
+clear: both;
+}
+.nobreak {
+page-break-inside: avoid;
+}
+.alwaysbreak {
+page-break-before: always;
+}
+
 .btn.pdf-light {
   background-color-b: #A29EFF;
   border-style: solid;

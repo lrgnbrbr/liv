@@ -1,15 +1,21 @@
 Rails.application.routes.draw do
   get 'informations/index'
   get 'testimonials/index'
-  # get 'organizations/index'
   devise_for :users
+
+  get :calculator,  to: 'pages#calculator'
+
   root to: 'pages#home'
+
 
   resources :lawsuits, only: [ :new, :create, :show] do
     get "lawsuit_send", on: :member
   end
+
   resources :organizations
   resources :medical
+  resources :pages, only: [:calculator, :home]
+
 
 
 
