@@ -28,4 +28,6 @@ end
 
 puts "Bravo : on a créé #{Organization.count} associations"
 
-
+Pseudo.create(:login => 'Sarah',
+            :password => '12345678'
+            :password_confirmation => '12345678')
