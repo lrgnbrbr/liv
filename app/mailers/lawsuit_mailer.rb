@@ -7,8 +7,13 @@ class LawsuitMailer < ApplicationMailer
   #   mail(to: @example.email, subject 'Pensez à vérifier votre déclaration avant envoi.')
   # end
 
-  def send
+  def lawsuit_send
     @pdf = mail(to: 'liv.asso.364@gmail.com', subject: 'Envoi du fichier pdf')
+
+  end
+
+  def test
+    mail(to: 'toto@gmail.com', subject: 'test')
 
   end
 end
