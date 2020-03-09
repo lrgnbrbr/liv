@@ -1,7 +1,6 @@
 .header-mobile {
-  background-color: #E0D7F6;
   height: 70px;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 2;
@@ -11,3 +10,4 @@
   display: flex;
   justify-content: center;
 }
+
