@@ -9,7 +9,6 @@ class PdfController < ActionMailer::Base
 
   def show
     @pdf = scope.find(params[:id])
-    render pdf: 'lawsuit#{id}.pdf'
   end
 
   def scope
@@ -23,3 +22,5 @@ class PdfController < ActionMailer::Base
     end
   end
 end
+
+

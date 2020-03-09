@@ -1,4 +1,4 @@
-.document {
+/*.document {
   height: 297mm - 23mm;
   width: 210mm -21mm;
   background-repeat: no-repeat;
@@ -64,8 +64,16 @@ page-break-before: always;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+}*/
+
+#pdf_style a {
+color: black !important;
 }
 
-#pdf_style{
-color: black !important;
+#sidebarContainer {
+display: none !important;
+}
+
+.container_pdf header {
+  display: none;
 }
