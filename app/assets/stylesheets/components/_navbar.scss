@@ -23,7 +23,6 @@
   text-align: center;
   color: white;
   z-index: 3;
-  height: 100%;
   a {
     color: white !important;
     text-decoration: none;
@@ -59,7 +58,7 @@
 }
 
 
-#toto1:checked ~ .hidden-computer > .navbar > ul > li > #button-hamburger {
+#toto1:checked ~ .navbar > ul > li > #button-hamburger {
   background-image: image-url('menu-close.svg');
   background-position: center;
   background-repeat: no-repeat;

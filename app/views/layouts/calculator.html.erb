@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable"  content="yes">
+    <link rel="manifest" href="/manifest.json">
     <title>TODO</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= stylesheet_pack_tag 'application' %>
+    <%= stylesheet_link_tag 'calculator' %>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
-    <body style="background: white">
-      <div class="container-home" style="margin-bottom: 8em">
-        <%= yield %>
-        <%= javascript_pack_tag 'application' %>
-      </div>
-    <div id="toto"></div>
-    </body>
+
+  <body style="background: white">
+    <div class="container-home" style="margin-bottom: 8em">
+      <%= yield %>
+      <%= javascript_pack_tag 'calculator' %>
+    </div>
+  </body>
 
 </html>

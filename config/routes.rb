@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   resources :medical
   resources :pages, only: [:calculator, :home]
 
+  # PWA
+  get '/manifest.json', to: 'service_worker#manifest'
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
