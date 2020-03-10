@@ -125,7 +125,6 @@ button:focus {
 }
 
 .calculator {
-  border-radius: 12px;
   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
@@ -138,7 +137,7 @@ button:focus {
   color: #fff;
   font-size: 110px;
   text-align: right;
-  height: 30vh;
+  height: 20vh;
   margin-bottom: 0vh;
 }
 
@@ -180,7 +179,7 @@ button:focus {
   grid-row: 2 / span 4;
 }
 button{
-  height: 14vh;
+  height: 16vh;
 }
 
 .key--equal{
