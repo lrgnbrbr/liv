@@ -37,7 +37,7 @@ class LawsuitsController < ApplicationController
  def lawsuit_send
   @lawsuit = Lawsuit.find(params[:id])
   #envoyer le mail
-  LawsuitMailer.lawsuit_send(@lawsuit.id).deliver_later
+  LawsuitMailer.lawsuit_send(@lawsuit.id).deliver_now
 
   #rediriger vers la home
 
