@@ -14,7 +14,7 @@ figure{
   position: absolute;
   opacity: 0;
   transition: 1s opacity;
-  position: static;
+  // position: static;
 }
 figcaption{
   position: absolute;
@@ -73,3 +73,4 @@ a{color:#fff;}
   border-color: #A29EFF !important;
   border-radius: 5px;
 }
+
