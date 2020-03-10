@@ -52,7 +52,7 @@
       <div class="row" id="temoignages">
         <div class="col">
           <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color:#706AFD ; text-align: center"> TÉMOIGNAGES </h2>
-        <%= render('shared/testimonials', id: "testimonials-web") %>
+          <%= render('shared/testimonials', id: "testimonials-web") %>
         </div>
       </div>
     </div>
@@ -78,12 +78,12 @@
         <div class="row" id="agir">
           <div class="col" style="margin: 50px;" >
             <div class="mx-auto" style="display: flex; justify-content: center;">
-              <p>ajouter le login</p>
+              <%= render('shared/login', resource: User.new, resource_name: :user) %>
             </div>
           </div>
           <div class="col" style="margin: 50px;">
             <div>
-              <p style="font-family: 'Bebas Neue'; font-size: 23px; color: #706AFD"><strong>ALLER PLUS LOIN</strong></p>
+              <p style="font-family: 'Bebas Neue'; font-size: 23px; color: #706AFD"><strong>AGIR À DISTANCE</strong></p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -91,7 +91,16 @@
                 irure dolor in reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
+
               </p>
             </div>
           </div>
@@ -100,7 +109,7 @@
     </div>
 
 
-    <div class="mx-auto" style="display: flex; justify-content: center; height: 400px; margin-top: 100px;">
+    <div class="mx-auto" style="display: flex; justify-content: center; height: 250px; margin-top: 100px;">
       <div class="row" id="medical">
         <div class="col">
           <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color: #706AFD ; text-align: center"> PRENDRE UN RDV </h2>
@@ -111,8 +120,23 @@
         </div>
       </div>
     </div>
+    <div class="mx-auto" style="display: grid; justify-content: stretch;">
+      <div class="row">
+        <div class="col medical-card">
+          <h2 style="font-family: 'Bebas Neue'; font-size: 30px; padding-top: 20px; color: #706AFD;"> AVEC UN MEDECIN</h2>
+          <%= image_tag 'medecin.svg'%>
+          <p style="padding-top: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nam repellat, doloribus sunt aspernatur illo vel in consectetur deleniti autem aliquid, dolore at ab sint sequi nemo nostrum, sapiente? Temporibus.</p>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        </div>
+        <div class="col medical-card">
+         <h2 style="font-family: 'Bebas Neue'; font-size: 30px; padding-top: 20px; color: #706AFD;"> AVEC UN PSYCHOLOGUE</h2>
+          <%= image_tag 'psychologue.svg'%>
+          <p style="padding-top: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nam repellat, doloribus sunt aspernatur illo vel in consectetur deleniti autem aliquid, dolore at ab sint sequi nemo nostrum, sapiente? Temporibus.</p>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style=" margin-top: -200px">
       <path fill="#E0D7F6" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,96C640,85,800,107,960,144C1120,181,1280,235,1360,261.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
     </svg>
     <div class="mx-auto" style="display: flex; justify-content: center; background:rgb(224, 215, 246); height: 100px;">

@@ -1,0 +1,38 @@
+<%= render('shared/header_mobile' , title: "Formulaire") %>
+<div class="container">
+
+   <div class="icone-page">
+    <%= image_tag 'secret.svg' %>
+  </div>
+
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs">
+      <%= f.input :pseudo,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: " pseudo" },
+                  label: false,
+                  placeholder: '👤 ..........'  %>
+      <%= f.input :password,
+                  required: false,
+                  input_html: { autocomplete: "current-password" },
+                  label: false,
+                  placeholder: '🔐 .......... ' %>
+    </div>
+    <div class="links1">
+      <%- if controller_name != 'passwords' && controller_name != 'registrations' %>
+        <%= link_to "Mot de passe oublié?", new_password_path(resource_name) %><br />
+      <% end %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Connexion",class: 'btn_liv' %>
+    </div>
+  <% end %>
+
+  <div class="links2">
+    <%- if controller_name != 'registrations' %>
+      <%= link_to "Créer un compte", new_registration_path(resource_name) %><br />
+    <% end %>
+  </div>
+</div>
