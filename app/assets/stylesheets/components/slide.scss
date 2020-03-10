@@ -14,7 +14,7 @@ figure{
   position: absolute;
   opacity: 0;
   transition: 1s opacity;
-  // position: static;
+  position: static;
 }
 figcaption{
   position: absolute;
@@ -36,14 +36,12 @@ figure.show{
   transition: 1s opacity;
 }
 .next, .prev{
-  color: #fff;
+  color: #A29EFF;
   position: absolute;
-  background: rgba(0,0,0, .6);
   top: 50%;
   z-index: 1;
-  font-size: 2em;
+  font-size: 3em;
   margin-top: -.75em;
-  opacity: .3;
   user-select: none;
 }
 .next:hover, .prev:hover{
