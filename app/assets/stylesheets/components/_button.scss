@@ -55,3 +55,13 @@
   font-size: 50px;
 }
 
+.medical-card {
+  display: block;
+  margin-left: 50px;
+  background: white;
+  margin-right: 50px;
+  border-radius: 10px;
+  height: 300px;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}

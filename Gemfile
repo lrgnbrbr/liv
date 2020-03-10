@@ -18,6 +18,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'docusign_esign'
+gem 'flutie'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

@@ -4,31 +4,31 @@
 }
 
 #user_pseudo {
-border: 2px solid;
-border-color: #E0D7F6;
-height: 50px;
-margin-bottom: 35px;
+  border: 2px solid;
+  border-color: #E0D7F6;
+  height: 50px;
+  margin-bottom: 35px;
 }
 
 #user_password {
-border: 2px solid;
-border-color: #E0D7F6;
-height: 50px;
-margin-bottom: -14px;
+  border: 2px solid;
+  border-color: #E0D7F6;
+  height: 50px;
+  margin-bottom: -14px;
 }
 
 .form-inputs {
-padding-top: 18px;
+  padding-top: 18px;
 }
 
 .links1 a {
-margin-top: 25px;
-color: #E0D7F6;
+  margin-top: 25px;
+  color: #E0D7F6;
 }
 
 .links1 {
-margin-bottom: 29px;
-margin-top: 23px;
+  margin-bottom: 29px;
+  margin-top: 23px;
 }
 
 .links2 a {
@@ -40,10 +40,18 @@ margin-top: 23px;
 }
 
 
-
-
 .icone-page {
-display: flex;
-justify-content: center;
-margin-top: -21px;
+  display: flex;
+  justify-content: center;
+  margin-top: -21px;
+}
+
+
+@media screen and (min-width: 992px) {
+  .header-mobile {
+    display: none;
+  }
+  .icone-page {
+    display: grid !important;
+}
 }
