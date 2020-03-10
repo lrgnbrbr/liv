@@ -1,11 +1,11 @@
 Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "https://liv-today.herokuapp.com/" }
+  config.action_mailer.default_url_options = { host: ENV["PRODUCTION_URL"] }
     # Settings specified here will take precedence over those in config/application.rb.
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SG_USER_NAME'],
     :password => ENV['SG_PASSWORD'],
-    :domain => 'https://liv-today.herokuapp.com/',
+    :domain => ENV["PRODUCTION_URL"],
     :address => 'smtp.sendgrid.net',
     :port => 465,
     :authentication => :plain,
