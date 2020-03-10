@@ -126,7 +126,7 @@ keys.addEventListener('click', e => {
   updateVisualState(key, calculator)
   console.log(displayedNum)
   if (displayedNum === "3639") {
-    window.location = "https://liv-today.herokuapp.com/"
+    window.location = "/";
   }
 })
 
