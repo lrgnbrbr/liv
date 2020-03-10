@@ -19,6 +19,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'docusign_esign'
 gem 'flutie'
+gem 'awesome_print'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

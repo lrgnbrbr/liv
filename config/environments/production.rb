@@ -2,14 +2,15 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: ENV["PRODUCTION_URL"] }
     # Settings specified here will take precedence over those in config/application.rb.
+
   ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SG_USER_NAME'],
-    :password => ENV['SG_PASSWORD'],
-    :domain => ENV["PRODUCTION_URL"],
-    :address => 'smtp.sendgrid.net',
-    :port => 465,
-    :authentication => :plain,
-    :enable_starttls_auto => true
+    domain: ENV["PRODUCTION_URL"],
+    address:        "smtp.sendgrid.net",
+    port:            587,
+    authentication: :plain,
+    user_name:      'apikey',
+    password:       ENV["SEND_GRID_TOKEN"],
+    enable_starttls_auto: true
   }
 
   config.action_mailer.perform_deliveries = true

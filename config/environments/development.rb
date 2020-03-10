@@ -1,14 +1,13 @@
 
 Rails.application.configure do
   # Rails.application.routes.default_url_options = { host: "localhost", port: 3000 }
-  # config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   # config.action_mailer.delivery_method = :smtp
   # config.action_mailer.smtp_settings = { :address => "127.0.0.1", port: 1025 }
   # Settings specified here will take precedence over those in config/application.rb.
 
-    config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
-
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
