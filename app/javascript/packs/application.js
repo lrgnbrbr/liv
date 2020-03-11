@@ -8,7 +8,10 @@ import "components/index.js";
 import "components/init_select2.js";
 import "components/testimonials.js";
 import 'select2/dist/css/select2.css';
-
+import AOS from "aos";
+import 'aos/dist/aos.css';
+AOS.init();
+// import { animate } from '../components/animate';
 import { initSelect2 } from '../components/init_select2';
 initSelect2();
 
