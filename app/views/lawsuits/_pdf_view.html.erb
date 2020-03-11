@@ -1,34 +1,34 @@
   <h5>
     <strong> </strong>
-    <%= @lawsuit.lawsuit_type %>
+    <!-- <%= @lawsuit.lawsuit_type %> -->
   </h5>
   <p>
-    <strong> Secteur Commissariat: </strong>
-    <%= @lawsuit.zip_code%>
+    <strong style="color: #a29eff"> Secteur Commissariat: <br> </strong>
+    <%= @lawsuit.zip_code %>
   </p>
   <hr>
-  <p> <strong> Déclarant(e): </strong>
+  <p> <strong style="color: #a29eff"> Déclarant(e): <br></strong>
     <%= @lawsuit.first_name%>
     <%=@lawsuit.last_name%>
   </p>
     <p>
-      <strong> N° de carte d'identité: </strong>
+      <strong style="color: #a29eff"> N° de carte d'identité:<br> </strong>
        <%= @lawsuit.number_dni%> </p>
     <hr>
     <p>
-      <strong> Auteur(e) des faits: </strong>
+      <strong style="color: #a29eff"> Auteur(e) des faits: <br></strong>
       <%= @lawsuit.author_violence%>
     </p>
     <p>
-      <strong> Objet: </strong>
+      <strong style="color: #a29eff"> Objet:<br> </strong>
       <%= @lawsuit.violence_type.reject(&:empty?).join %>
     </p>
     <p>
-      <strong> Date: </strong>
+      <strong style="color: #a29eff"> Date:<br> </strong>
       <%= @lawsuit.violence_date %>
     </p>
     <hr>
     <p>
-      <strong>  </strong>
+      <strong style="color: #a29eff"> Description:  </strong>
       <%= @lawsuit.declaration%>
-    </p>s
+    </p>
