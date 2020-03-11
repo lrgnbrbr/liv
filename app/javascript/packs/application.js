@@ -10,9 +10,10 @@ import "components/testimonials.js";
 import 'select2/dist/css/select2.css';
 
 import { initSelect2 } from '../components/init_select2';
-
 initSelect2();
 
+import { initDisplayNavbar } from '../components/init_display_navbar';
+initDisplayNavbar();
 
 
 // document.addEventListener('dblclick', function (event) {
@@ -25,4 +26,3 @@ initSelect2();
 
 // document.querySelector('#toto');
 //  add id list?;
-

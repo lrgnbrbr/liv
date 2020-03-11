@@ -12,7 +12,7 @@
          <%= f.input :zip_code, placeholder:'', label: 'Code postal (pour choisir le commissariat)'%>
          <%= f.input :number_dni, placeholder: '', label: 'N° CNI (carte identité, passport, visa étranger)', :as => "text" %>
          <p>Type de violence dont tu as été victime ? </p>
-         <div class="checkbox-container"><%= f.input :violence_type, label: '', placeholder: '', collection: ['Viols', 'Violence psychologique', 'Violence physique', 'Je ne sais pas'], input_html: { class: 'choices' }, as: :check_boxes, include_blank: false %></div>
+         <div class="checkbox-container"><%= f.input :violence_type, label: '', placeholder: '', collection: [' Viol', ' Violence psychologique', ' Violence physique', ' Je ne sais pas'], input_html: { class: 'choices' }, as: :check_boxes, include_blank: false %></div>
          <%= f.input :violence_date, placeholder: '', label: 'Date et heure de l’agression que tu as subis:' %>
          <%= f.input :author_violence, placeholder: '', label: 'Auteur des faits (si non connu « X »)' %>
          <%= f.input :lawsuit_type, placeholder: '', label: 'Quelle forme de plainte souhaites tu déposer?', collection: ['Main courante', 'Pré-Plainte', 'Plainte', 'Je ne sais pas'], input_html: { class: 'choices' } %>
@@ -24,4 +24,5 @@
 
  </div>
  <% end %>
+
 
