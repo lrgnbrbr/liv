@@ -1,2 +1,5 @@
-<%= render 'lawsuits/pdf_view' %>
-<%= render 'lawsuits/pdf_footer' %>
+<%= render('shared/header_mobile' , title: "Votre plainte") %>
+<div class = "preview_container">
+  <%= render 'lawsuits/pdf_view' %>
+  <%= render 'lawsuits/pdf_footer' %>
+</div>
