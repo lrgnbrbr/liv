@@ -12,9 +12,14 @@ import 'aos/dist/aos.css';
 AOS.init();
 import { animate } from '../components/animate';
 import { initSelect2 } from '../components/init_select2';
-
 initSelect2();
+
 // animate();
+
+
+import { initDisplayNavbar } from '../components/init_display_navbar';
+initDisplayNavbar();
+
 
 
 // document.addEventListener('dblclick', function (event) {
@@ -28,6 +33,8 @@ initSelect2();
 // document.querySelector('#toto');
 //  add id list?;
 
+
 document.addEventListener('DOMContentLoaded', (e) => {
   window.scrollTo(0,0)
 })
+

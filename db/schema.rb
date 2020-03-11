@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_10_093523) do
+ActiveRecord::Schema.define(version: 2020_03_10_174131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "annuaire_commissariats", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "zip_code"
+    t.string "city"
+    t.string "phone"
+    t.string "Insee_number"
+    t.float "PGS_x_Geocode"
+    t.float "PGS_y_Geocode"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "information", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false

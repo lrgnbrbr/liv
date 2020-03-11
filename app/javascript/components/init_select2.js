@@ -8,7 +8,7 @@ const initSelect2 = () => {
   if (inputMobile) {
     inputMobile.addEventListener('keyup', () => {
       organizations.forEach((organization) => {
-        console.log(organization.dataset.zip)
+        // console.log(organization.dataset.zip)
         if (organization.dataset.zip.startsWith(inputMobile.value)) {
           organization.style.display = "block"
         } else {
