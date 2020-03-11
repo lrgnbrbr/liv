@@ -1,0 +1,2 @@
+class AnnuaireCommissariat < ApplicationRecord
+end
