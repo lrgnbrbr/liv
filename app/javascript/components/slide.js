@@ -1,12 +1,14 @@
 var counter = 0, // to keep track of current slide
-    $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
-    numItems = $items.length; // total number of slides
+$items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
+numItems = $items.length; // total number of slides
 
 // this function is what cycles the slides, showing the next or previous slide and hiding all the others
 var showCurrent = function(){
-    var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show
+  var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show
 
+  $items.hide()
   $items.removeClass('show'); // remove .show from whichever element currently has it
+  $items.eq(itemToShow).show()
   $items.eq(itemToShow).addClass('show');
 };
 

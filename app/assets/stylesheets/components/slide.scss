@@ -34,6 +34,7 @@ figure.show{
   opacity: 1;
   position: static;
   transition: 1s opacity;
+  display: block;
 }
 .next, .prev{
   color: #A29EFF;
