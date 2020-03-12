@@ -6,7 +6,7 @@
 
     <div class="results-orga">
     <% organizations.each do |organization| %>
-        <div class="organization" data-zip="<%= organization.zip_code %>">
+        <div class="organization" data-aos="flip-down" data-zip="<%= organization.zip_code %>">
          <h1><%= organization.name %></h1><h2><%= organization.zip_code %></h2><h2><%= organization.address %></h2>
           <p><%= organization.description %></p><br>
           <%= link_to "tel:#{organization.phon_number}", class:"phonelink" do %>
