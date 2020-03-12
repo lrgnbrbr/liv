@@ -1,5 +1,6 @@
+<%= render('shared/header_mobile' , title: "Inscription") %>
 
-<div class="container">
+<div class="container" data-aos="fade-up">
 
      <div class="icone-page">
     <%= image_tag 'secret.svg' %>
@@ -33,7 +34,6 @@
     </div>
   <% end %>
   <div class="links3">
-  <%= render "devise/shared/links" %>
+  <%= render "devise/shared/links", resource_name: resource_name %>
   </div>
 </div>
-
