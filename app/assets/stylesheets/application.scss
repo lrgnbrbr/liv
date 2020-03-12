@@ -82,12 +82,24 @@ body.lawsuits-show .hidden-computer {
   }
 }
 
-body.lawsuit_send_lawsuit .hidden-computer {
+body.devise-sessions.devise-sessions-new .hidden-computer {
   display: block;
+  margin-top: 154px;
   .hidden-computer{
   display: none;
   }
 }
+
+
+body.devise-registrations.devise-registrations-new .hidden-computer {
+  display: block;
+  margin-top: 154px;
+  .hidden-computer{
+  display: none;
+  }
+}
+
+
 
 
 
