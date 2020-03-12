@@ -7,14 +7,14 @@
   </div>
 
   <div class="row" style="margin: 5px">
-    <p><strong>Tu as besoin d'aide?</strong> Tu ne sais pas comment faire ni où aller? Tu as envie de parler mais c'est difficile?</p>
+    <p><strong>Tu as besoin d'aide&nbsp;?</strong> Tu ne sais pas comment faire ni où aller&nbsp;? Tu as envie de parler mais c'est difficile&nbsp;?</p>
 
     <p>Liv est là pour t'informer, t'aider et t'apporter son soutien.</p>
     <p>Si tu veux, regarde les vidéos, les témoignages. Tu verras que <strong>d'autres partagent ton histoire</strong>, leur histoire. Ce qui t'arrive n'est pas de ta faute.</p>
-    <p><strong>Oui, ta vie peut changer, oui ça peut s'arrêter!</strong></p>
-    <p>Dans la section <strong>"AGIR"</strong>, si tu le souhaites, tu peux <strong>remplir une plainte</strong> à distance et l'envoyer par mail directement.
+    <p><strong>Oui, ta vie peut changer, oui ça peut s'arrêter&nbsp;!</strong></p>
+    <p>Dans la section <strong>"AGIR LÉGALEMENT"</strong>, si tu le souhaites, tu peux <strong>remplir une plainte</strong> à distance et l'envoyer par mail directement.
+    </div>
   </div>
-</div>
 </div>
 
 <div class= "hidden-mob" style= "width: 100%; background-color: rgb(224, 215, 246);">
@@ -30,11 +30,11 @@
         <div>
           <br>
           <br>
-          <p><strong>Tu as besoin d'aide?</strong> Tu ne sais pas comment faire ni où aller? <br>Tu as envie de parler mais c'est difficile?</p>
+          <p><strong>Tu as besoin d'aide&nbsp;?</strong> Tu ne sais pas comment faire ni où aller&nbsp;? <br>Tu as envie de parler mais c'est difficile&nbsp;?</p>
           <p>Liv est là pour t'informer, t'aider et t'apporter son soutien.</p>
           <p>Si tu veux, regarde les vidéos, les témoignages. <br>Tu verras que <strong>d'autres partagent ton histoire</strong>, leur histoire. <br>Ce qui t'arrive n'est pas de ta faute.</p>
           <p><strong>Oui, ta vie peut changer, oui ça peut s'arrêter!</strong></p>
-          <p>Dans la section <strong>"AGIR"</strong>, si tu le souhaites, tu peux <strong>remplir une plainte</strong> à distance et l'envoyer par mail directement.
+          <p>Dans la section <strong>"AGIR LÉGALEMENT"</strong>, si tu le souhaites, tu peux <strong>remplir une plainte</strong> à distance et l'envoyer par mail directement.
             <br>
           </p>
         </div>
@@ -81,58 +81,61 @@
     <div class="mx-auto" style="display: flex; justify-content: center; background: linear-gradient(180deg, rgba(224,215,246,1) 0%, rgba(255,255,255,1) 100%); ">
       <div class="card-web"  data-aos="fade-up" style="background-color: white; border-radius: 20px; margin-left: 100px; margin-right: 100px; box-shadow: 0 0 15px rgba(224, 215, 246, 1);">
         <div class="row" id="agir">
-          <div class="col" style="margin: 50px;" >
+          <div >
             <div class="mx-auto" style="display: flex; justify-content: center;">
-              <%= render('shared/login', resource: User.new, resource_name: :user) %>
+            </div>
           </div>
-          </div>
-          <div class="col" style="margin: 50px;">
+          <div class="col" style="margin: 50px;" class="agir">
             <div>
-              <p style="font-family: 'Bebas Neue'; font-size: 23px; color: #706AFD"><strong>AGIR À DISTANCE</strong></p>
-              <p>Toutes les déclarations remplies par une personne sur le site sont officielles et validées par un commissariat après envoi par mail du document rempli.
+              <p style="font-family: 'Bebas Neue'; font-size: 35px; color: #706AFD"><strong>AGIR LÉGALEMENT</strong></p>
+              <p><strong>Pour l'instant LIV en est au stade démo</strong>, voici ce que nous espérons pour l'avenir : </p> <br>
+              <p>Toutes les déclarations remplies par une personne sur le site seront validées par un commissariat après envoi par mail du document rempli. Le <a class="medical"><%= link_to "formulaire",  new_lawsuit_path %></a> envoyé a valeur officielle. Il est important de bien relire avant envoi.
                 <br><br>
-              <p>Les violences, qu'elles soient physiques, psychologiques ou économiques, sont intolérables et interdites par la loi. Même un témoin de violences doit alerter les pouvoirs publics.
-              LIV s'adresse à toutes les victimes, femmes, hommes ou enfants, permet de s'informer et de déclarer des faits de violence en ligne, sur son site.
-              </p>
+                <p>Les violences, qu'elles soient physiques, psychologiques ou économiques, sont intolérables et interdites par la loi. Même un témoin de violences doit alerter les pouvoirs publics.
+                  LIV s'adresse à toutes les victimes, femmes, hommes ou enfants et leur offre les ressources nécessaires pour s'en sortir.
+                  <p>Pour plus de sécurité, il est possible d'ajouter l'application à l'écran d'accueil dans les options du navigateur sur mobile. <br>
+                    <br>
+                  </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="mx-auto" aos="fade-up" style="display: flex; justify-content: center; height: 250px; margin-top: 100px;">
-      <div class="row" data-aos="fade-up" id="medical">
-        <div class="col">
-          <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color: #706AFD ; text-align: center"> PRENDRE UN RDV </h2>
-          <p style="text-align: center">Tu peux prendre rendez-vous physiquement ou en visio.<br>
-            Le constat d'un médecin est aujourd'hui la seule preuve officielle lors d'une agression.<br>
-            Choisis ce que tu souhaites, soit un rendez-vous avec un médecin généraliste soit <br>avec un psychologue spécialisé dans les traumatismes suite aux violences.<br>
-          </p>
+      <div class="mx-auto" aos="fade-up" style="display: flex; justify-content: center; height: 250px; margin-top: 100px;">
+        <div class="row" data-aos="fade-up" id="medical">
+          <div class="col">
+            <h2 style="font-family: 'Bebas Neue'; font-size: 50px; color: #706AFD ; text-align: center"> PRENDRE UN RDV </h2>
+            <p style="text-align: center">Tu peux prendre rendez-vous physiquement ou en visio.<br>
+              Le constat d'un médecin est aujourd'hui la seule preuve officielle lors d'une agression.<br>
+              Choisis ce que tu souhaites, soit un rendez-vous avec un médecin généraliste soit <br>avec un psychologue spécialisé dans les traumatismes suite aux violences.<br>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="mx-auto" style="display: grid; justify-content: stretch;">
-      <div class="row">
-        <div class="col medical-card" data-aos="fade-left">
-          <h2 style="font-family: 'Bebas Neue'; font-size: 30px; padding-top: 20px; color: #706AFD;"> AVEC UN MEDECIN</h2>
-          <%= image_tag 'medecin.svg'%>
+      <div class="mx-auto" style="display: grid; justify-content: stretch;">
+        <div class="row">
+          <div class="col medical-card" data-aos="fade-left">
+            <h2 style="font-family: 'Bebas Neue'; font-size: 30px; padding-top: 20px; color: #706AFD;"> AVEC UN MEDECIN</h2>
+            <%= image_tag 'medecin.svg'%>
 
             <p style=“padding-top: 20px”>Tu peux prendre un rendez-vous directement avec un  <a href="https://www.doctolib.fr/medecin-generaliste/" target="_blank">médecin de jour</a>, généraliste ou psychiatre ou joindre un <a href="https://www.allo-medecin-garde.fr/" target="_blank">médecin de nuit</a> si les faits sont nocturnes. Pour rappel, il est essentiel de ne pas enlever les preuves de ce qui est survenu. Pas de toilette avant en cas de viol.</p>
 
 
-        </div>
-        <div class="col medical-card" data-aos="fade-right">
-         <h2 style="font-family: 'Bebas Neue'; font-size: 30px; padding-top: 20px; color: #706AFD;"> AVEC UN PSYCHOLOGUE</h2>
+          </div>
+          <div class="col medical-card" data-aos="fade-right">
+           <h2 style="font-family: 'Bebas Neue'; font-size: 30px; padding-top: 20px; color: #706AFD;"> AVEC UN PSYCHOLOGUE</h2>
 
-          <%= image_tag 'psychologue.svg'%>
-            <p style=“padding-top: 20px”>Pour retrouver un <a href="https://www.doctolib.fr/psychologue/" target="_blank">psychologue</a> ou un <a href="https://www.doctolib.fr/psychiatre" target="_blank">psychiatre</a> pour une consultation de diagnostic, ou un suivi à plus long terme.</p>
+           <%= image_tag 'psychologue.svg'%>
+           <p style=“padding-top: 20px”>Pour retrouver un <a href="https://www.doctolib.fr/psychologue/" target="_blank">psychologue</a> ou un <a href="https://www.doctolib.fr/psychiatre" target="_blank">psychiatre</a> pour une consultation de diagnostic, ou un suivi à plus long terme.</p>
 
-        </div>
-      </div>
-    </div>
+         </div>
+       </div>
+     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style=" margin-top: -200px">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style=" margin-top: -200px">
       <path fill="#E0D7F6" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,96C640,85,800,107,960,144C1120,181,1280,235,1360,261.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
     </svg>
     <div class="mx-auto" style="display: flex; justify-content: center; background:rgb(224, 215, 246); height: 100px;">
