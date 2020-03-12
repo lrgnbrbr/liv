@@ -8,7 +8,7 @@
       <p><strong>Pour l'utiliser, afficher 3639 et appuyer sur =</strong></p>
         <p>Le formulaire ci-dessous est une déclaration officielle. Il est important de bien relire avant envoi.</p>
 
-  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= simple_form_for(resource, as: resource_name, method: :get, url: new_lawsuit_path ) do |f| %>
     <div class="form-inputs">
       <%= f.input :pseudo,
                   required: true,

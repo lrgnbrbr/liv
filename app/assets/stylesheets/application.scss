@@ -67,6 +67,30 @@ body.lawsuits-new .hidden-computer {
   }
 }
 
+
+body.lawsuits-new .hidden-computer {
+ display: block;
+ .hidden-computer{
+  display: none;
+  }
+}
+
+body.lawsuits-show .hidden-computer {
+  display: block;
+  .hidden-computer{
+  display: none;
+  }
+}
+
+body.lawsuit_send_lawsuit .hidden-computer {
+  display: block;
+  .hidden-computer{
+  display: none;
+  }
+}
+
+
+
 .fade-in {
   opacity: 1;
   animation-name: fadeInOpacity;
@@ -83,3 +107,4 @@ body.lawsuits-new .hidden-computer {
     opacity: 1;
   }
 }
+
