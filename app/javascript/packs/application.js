@@ -7,6 +7,7 @@ import "components/index.js";
 import "components/init_select2.js";
 import "components/testimonials.js";
 import 'select2/dist/css/select2.css';
+import "../components/init_animation.js";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 AOS.init();
@@ -16,7 +17,6 @@ import { initSelect2 } from '../components/init_select2';
 initSelect2();
 
 // animate();
-
 
 import { initDisplayNavbar } from '../components/init_display_navbar';
 initDisplayNavbar();
