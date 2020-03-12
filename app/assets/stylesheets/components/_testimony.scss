@@ -16,6 +16,12 @@
   margin: 0px;
   }
 
+  .video-responsive:hover {
+    transform: scale(1.1);
+    transition: all 1.3s;
+    cursor: pointer;
+  }
+
   .video-responsive iframe { left:0; top:0; height:100%; width:100%; position:absolute;}
 
   .style_image {
