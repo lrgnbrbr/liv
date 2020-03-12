@@ -35,7 +35,3 @@ initDisplayNavbar();
 //  add id list?;
 
 
-document.addEventListener('DOMContentLoaded', (e) => {
-  window.scrollTo(0,0)
-})
-
