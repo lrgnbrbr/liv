@@ -22,7 +22,6 @@ body.lawsuits-new .hidden-computer {
 @media screen and (min-width: 992px) {
   .hidden-computer {
     display: none;
-
   }
 
   .results-orga {
@@ -84,7 +83,6 @@ body.lawsuits-show .hidden-computer {
 
 body.devise-sessions.devise-sessions-new .hidden-computer {
   display: block;
-  margin-top: 154px;
   .hidden-computer{
   display: none;
   }
@@ -93,14 +91,10 @@ body.devise-sessions.devise-sessions-new .hidden-computer {
 
 body.devise-registrations.devise-registrations-new .hidden-computer {
   display: block;
-  margin-top: 154px;
   .hidden-computer{
   display: none;
   }
 }
-
-
-
 
 
 .fade-in {
