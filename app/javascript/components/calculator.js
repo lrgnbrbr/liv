@@ -125,7 +125,7 @@ keys.addEventListener('click', e => {
   updateCalculatorState(key, calculator, resultString, displayedNum)
   updateVisualState(key, calculator)
   console.log(displayedNum)
-  if (displayedNum === "3639") {
+  if (displayedNum === "3919") {
     window.location = "/";
   }
 })
