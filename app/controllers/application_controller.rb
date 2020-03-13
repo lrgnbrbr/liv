@@ -9,4 +9,9 @@ class ApplicationController < ActionController::Base
     #devise_parameter_sanitizer.permit(:sign_up, keys: [:login])
   end
 
+  def default_url_options
+    { host: ENV["PRODUCTION_URL"] || "localhost:3000" }
+  end
+
 end
+
