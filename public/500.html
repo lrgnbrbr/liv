@@ -1,66 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  .rails-default-error-page {
-    color: #322648;
-    text-align: center;
-    font-family: "Work Sans";
-    margin: 0;
-  }
 
-  .rails-default-error-page div.dialog {
-    border: 2px solid;
-    border-color: #E0D7F6;
-    height: 50px;
-    margin-bottom: 34px;
-  }
+  div#error
+  div#box
+  h3 ERROR 500
+  p Things are a little #[span unstable] here
+  p I suggest come back later
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+  $color-1 = magenta;
+$color-2 = cyan;
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
+html,body
+  height 100%;
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-  </style>
-</head>
+body
+  display grid;
+  width 100%;
+  font-family: Inconsolata, monospace;
 
-<body class="rails-default-error-page" style= "width: 100%; background-color: rgb(224, 215, 246);">
-  <!-- This file lives in public/500.html -->
-  <div class="dialog">
-    <div class="dialog">
-      <h1>hello.</h1>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
-</body>
-</html>
+  div#error
+    position relative;
+    margin auto; padding: 20px;
+    z-index 2;
+
+    div#box
+      position absolute; top 0; left 0;
+      width 100%; height 100%;
+      border 1px solid #000;
+
+      &:before, &:after
+        content '';
+        position absolute; top 0; left 0;
+        width 100%; height 100%;
+        box-shadow inset 0px 0px 0px 1px #000;
+        mix-blend-mode: multiply;
+        animation dance 2s infinite steps(1);
+
+      &:before
+        clip-path: polygon(0 0, 65% 0, 35% 100%, 0 100%)
+        box-shadow inset 0px 0px 0px 1px currentColor;
+        color $color-1;
+
+      &:after
+        clip-path: polygon(65% 0, 100% 0, 100% 100%, 35% 100%);
+        animation-duration: 0.5s;
+        animation-direction: alternate;
+        box-shadow inset 0px 0px 0px 1px currentColor;
+        color $color-2;
+
+    h3
+      position relative;
+      font-size: 5vw; font-weight: 700;
+      text-transform uppercase;
+      animation: blink 1.3s infinite steps(1);
+
+      &:before, &:after
+        content 'ERROR 500';
+        position absolute; top -1px; left 0;
+        mix-blend-mode: soft-light;
+        animation dance 2s infinite steps(2);
+
+      &:before
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%)
+          color: $color-1;
+          animation: shiftright 2s steps(2) infinite;
+        &:after
+          clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%)
+          color: $color-2;
+          animation: shiftleft 2s steps(2) infinite;
+
+    p
+      position relative
+      margin-bottom 8px;
+
+      span
+        position relative;
+        display inline-block;
+        font-weight: bold;
+        color: #000;
+        animation blink 3s steps(1) infinite;
+
+        &:before, &:after
+          content 'unstable';
+          position absolute;
+          top -1px; left 0;
+          mix-blend-mode multiply;
+
+        &:before
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%)
+          color: $color-1;
+          animation: shiftright 1.5s steps(2) infinite;
+        &:after
+          clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%)
+          color: $color-2;
+          animation: shiftleft 1.7s steps(2) infinite;
+
+@keyframes dance
+  0%, 84%, 94%
+    transform skew(0deg);
+  85%
+    transform skew(5deg);
+  90%
+    transform skew(-5deg);
+  98%
+    transform skew(3deg);
+
+@keyframes shiftleft
+  0%, 87%, 100%
+    transform translate(0,0) skew(0deg);
+  84%, 90%
+    transform translate(-8px,0) skew(20deg);
+
+@keyframes shiftright
+  0%, 87%, 100%
+    transform translate(0,0) skew(0deg);
+  84%, 90%
+    transform translate(8px,0) skew(20deg);
+
+@keyframes blink
+  0%, 50%, 85%, 100%
+    color #000;
+  87%, 95%
+    color transparent;
