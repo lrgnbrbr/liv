@@ -1,6 +1,7 @@
 Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: ENV["PRODUCTION_URL"] }
+  config.hosts << "www.liv.today"
     # Settings specified here will take precedence over those in config/application.rb.
 
   ActionMailer::Base.smtp_settings = {
